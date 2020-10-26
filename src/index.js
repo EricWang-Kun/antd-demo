@@ -85,22 +85,18 @@ class NewApp extends React.Component {
     //  空项搜索源数据
     if(!val) return this.pushAllList();
     //  判断搜索内容是否为key
-    if(!isNaN(Number(val))) {
-      let {allTableList} = this.state;
-      let newArr = allTableList.filter(el=>Number(el.age)===Number(val));
-      this.setState({
-        tableList:newArr,
-        searchKey:val
-      })
-    }else{
-      this.setState({
-        tableList:[],
-        searchKey:val
-      })
-    };
+    let {allTableList} = this.state;
+    let newArr = allTableList.filter(el=>{
+      let tempStr = el.age.toString();
+      if(tempStr.indexOf(val)!==-1) return el;
+    });
+    this.setState({
+      tableList:newArr,
+      searchKey:val
+    })
   }
   //  输入框内容变化
-  onchange(val,e,ea,eaa) {
+  onchange() {
   }
   //  源数据复制
   pushAllList() {
