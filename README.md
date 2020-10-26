@@ -1,3 +1,5 @@
+<!-- 仅仅用来熟悉react和ant的增删改查，初学react，很多都不太懂，自己摸索着写了一个简单的demo，搜索暂时只是精确搜索 -->
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
