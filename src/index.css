@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.editBtns{
+  margin-left: 20px;
+}
+.tableTool {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
