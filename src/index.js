@@ -101,10 +101,6 @@ class NewApp extends React.Component {
   }
   //  输入框内容变化
   onchange(val,e,ea,eaa) {
-    console.log(val,e,ea,eaa);
-    // this.setState({
-
-    // })
   }
   //  源数据复制
   pushAllList() {
