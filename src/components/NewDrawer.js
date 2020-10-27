@@ -20,21 +20,21 @@ class NewDrawer extends React.Component {
                             name="name"
                             rules={[{ required: true, message: 'Please input your name!' }]}
                         >
-                            <Input value={this.props.editForm.name} onChange={this.props.onchange()} />
+                            <Input value={this.props.editForm.name} />
                         </Form.Item>
                         <Form.Item
                             label="age"
                             name="age"
                             rules={[{ required: true, message: 'Please input your age!' }]}
                         >
-                            <Input onChange={()=>this.props.onchange(this.props.editForm.age)} value={this.props.editForm.age} />
+                            <Input value={this.props.editForm.age} />
                         </Form.Item>
                         <Form.Item
                             label="address"
                             name="address"
                             rules={[{ required: true, message: 'Please input your address!' }]}
                         >
-                            <Input onChange={()=>this.props.onchange(this.props.editForm.address)} value={this.props.editForm.address} />
+                            <Input value={this.props.editForm.address} />
                         </Form.Item>
                         <Form.Item>
                             <Button type="primary" htmlType="submit" >提交</Button>
